@@ -9,7 +9,8 @@ function MusicaContextual() {
         <h2>Música Contextual</h2>
       </nav>
       <div>
-        <input type="text" />
+        <input type="text" placeholder="Cuál es la lkjohkjh" />
+        <input type="text" placeholder="Hola" />
       </div>
     </div>
   );
