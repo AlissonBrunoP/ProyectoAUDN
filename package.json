@@ -1,0 +1,15 @@
+{
+  "name": "proyecto_final",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install": "cd backend && npm i && cd ../frontend && npm i",
+    "back-dev": "cd backend && npm start",
+    "front-dev": "cd frontend && npm run dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+
