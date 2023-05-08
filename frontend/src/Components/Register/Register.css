@@ -1,0 +1,10 @@
+@media (min-width: 390px) and (max-width: 844px) {
+    #registerTop {
+      display: flex;
+    }
+    #registerTop button {
+      border: none;
+      background-color: white;
+    }
+  }
+  
