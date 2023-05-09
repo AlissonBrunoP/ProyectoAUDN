@@ -3,6 +3,7 @@ const morgan = require("morgan");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 require("dotenv").config();
+const audnRoutes = require("./routes/audnRoutes");
 
 
 //creamos el servidor con express
@@ -14,7 +15,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 // colocar rutas
-app.use("/api", ()=>{})
+app.use("/api", audnRoutes)
 
 // levantar el servidor en un puerto
 const port = process.env.PORT || 3000;
