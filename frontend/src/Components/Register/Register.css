@@ -45,6 +45,11 @@ body {
     display: flex;
     flex-direction: column;
     margin-left: 40px;
+  }
+  #inpMail {
+    margin-top: 100px;
+  }
+  #inpUser {
     margin-top: 100px;
   }
   h4 {
@@ -54,12 +59,12 @@ body {
     line-height: 28px;
     letter-spacing: 0.5px;
     color: #26262e;
-    margin: 10px;
+    margin-bottom: 10px;
   }
   .inputMail input {
     width: 320px;
-    padding: 10px;
-    color: #838486;
+    padding: 14px;
+    border: 1px solid #838486;
   }
   p {
     border-color: #838486;
@@ -67,15 +72,62 @@ body {
     font-weight: 500;
     font-size: 12px;
     letter-spacing: 0.5px;
-    margin-top: 5px;
+    margin-top: 10px;
   }
-  #btnConfirm {
+  .btnConfirmStyle {
     width: 320px;
-    padding: 13px;
+    padding: 15px;
     background-color: #ff8e0a;
     color: white;
     border: none;
     margin-left: 40px;
     margin-top: 100px;
+  }
+  form {
+    width: 320px;
+    border: 1px solid #838486;
+    display: flex;
+    padding: 3px;
+  }
+
+  #inpPassword {
+    margin-top: 40px;
+  }
+  #passwordRegister {
+    margin-left: 1rem;
+    width: 15rem;
+    height: 2.5rem;
+    border: 0px;
+    outline: none;
+    border-radius: 1.8rem;
+    font-size: 20px;
+    letter-spacing: 3px;
+  }
+  #termsCheckbox {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+  }
+  a {
+    color: #ff8e0a;
+    text-decoration: none;
+  }
+  .termsContainer {
+    font-size: 12px;
+    margin-left: 40px;
+    display: flex;
+    margin-top: 30px;
+  }
+
+  #labelCheckbox {
+    margin-top: 4px;
+  }
+
+  .validMessage {
+    color: #03a400;
+  }
+
+  .errorMessage {
+    color: #ea0f0f;
   }
 }

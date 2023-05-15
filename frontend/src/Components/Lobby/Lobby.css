@@ -1,0 +1,133 @@
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    text-align: center;
+  }
+  
+  body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-content: center;
+    background: linear-gradient(360deg, rgba(253, 254, 255, 0.301) 25%, rgba(248, 186, 115, 0.535) 75%, rgba(255, 185, 105, 0.9) 100%);
+    
+  }
+
+  section{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 1vh;
+    height: 500px;
+   }
+
+   .content{
+    display: flex;
+    flex-direction: column;
+
+   }
+ 
+   .logo{
+    display: flex;
+    margin-left: 50px;
+    width: 208px;
+    height: 70px;
+    background-image: url(../../assets/icons/logo-large.jpg);
+    background-repeat: no-repeat;
+   }
+   
+   
+      h3{
+          
+      font-family: 'Rubik';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 26px;
+      line-height: 31px;
+      margin-top: 5%;
+      
+         
+      text-align: center;
+      letter-spacing: -0.8px;    
+         
+      color: #26262E;}
+
+     
+  
+  
+      .registrarsegratis{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #FDFEFF;
+        background-color:#FF8E0A;
+        border-radius: 0px 20px;
+        border: none;
+        height: 40px;
+        margin: 10px;
+        padding: 0px 15px;
+        width: 300px;
+        font-weight: 600;
+                    
+      }
+  
+      .continuarcongoogle{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: #26262E solid 2px;
+        border-radius: 0px 20px;
+        height: 39px;
+        margin: 10px;
+        padding: 0px 15px;
+        width: 300px;
+        font-weight: 600;
+        
+  
+  
+    }
+  
+      .continuarconapple{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: #26262E solid 2px;
+        border-radius: 0px 20px;
+        height: 39px;
+        margin: 10px;
+        padding: 0px 15px;
+        width: 300px;
+        font-weight: 600;
+        
+  
+  
+    }  
+
+    .containerbutton{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .iniciarsesion{
+        display: flex;
+        align-items: center;
+        justify-content: center;       
+        border: none;
+        padding: 0 -2rem;
+    }
+
+   
+    
+    .background-gif {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("../../assets/icons/gif.gif"); 
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: -1;
+    }

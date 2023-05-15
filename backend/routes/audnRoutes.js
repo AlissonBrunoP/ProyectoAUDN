@@ -1,5 +1,16 @@
 const express = require("express");
-const { ShowOcasion, ShowFeeling, ShowWeather, MusicalGenres, getAllSongsByGenre, createPlaylist, createPlaylistSong, top10, songsSearch } = require("../controllers/audnControllers");
+const {
+  ShowOcasion,
+  ShowFeeling,
+  ShowWeather, MusicalGenres, getAllSongsByGenre, createPlaylist, createPlaylistSong, top10, songsSearch,
+  userCheck,
+  userMe,
+  userRegister,
+  GetArtist,
+  getAllSongsByArtist
+
+} = require("../controllers/audnControllers");
+
 const routes = express.Router();
 
 routes.get("/ocasion", ShowOcasion);
@@ -10,7 +21,12 @@ routes.post("/songsByGenre", getAllSongsByGenre);
 routes.post("/createPlaylist", createPlaylist);
 routes.post("/createPlaylistSong", createPlaylistSong);
 routes.get("/top10", top10);
-routes.get("/search", songsSearch)
+routes.get("/search", songsSearch);
+routes.get("/artist", GetArtist);
+routes.post("/songsByArtist", getAllSongsByArtist);
+routes.get("/me", userMe);
+routes.post("/register", userRegister);
+routes.post("/check", userCheck);
 
 
 
