@@ -1,0 +1,44 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  color: #26262e;
+}
+  #recoverTop {
+    display: flex;
+    background: linear-gradient(
+        180deg,
+        rgba(255, 142, 10, 0.225) 0%,
+        rgba(255, 142, 10, 0.133647) 25%,
+        rgba(253, 254, 255, 0) 75%
+      ),
+      #ffffff;
+    margin: 0px;
+    padding: 35px;
+    backdrop-filter: blur(100px);
+  }
+  #recoverTop h3 {
+    margin-left: 70px;
+    width: 272px;
+    height: 24px;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+  }
+
+  h4 {
+    width: 320px;
+    height: 28px;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+    color: #26262e;
+    margin-bottom: 10px;
+  }
+
+  #recoverMail {
+    margin-left: 40px;
+    margin-top: 10px;
+  }
+
+  #recoverMail p {
+width: 80%;  }
+

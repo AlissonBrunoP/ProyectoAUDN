@@ -4,11 +4,15 @@ import App from "./App.jsx";
 import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import MusicaContextual from "./Components/MusicaContextual/MusicaContextual.jsx";
+import CupidoMusical from "./Components/CupidoMusical/CupidoMusical.jsx";
 
 const Router = createBrowserRouter([
-  { path: "/", element: <App /> },
+
+/*   { path: "/", element: <App /> }, */
+{ path: "/", element: <CupidoMusical /> }, //SACAR luego y descomentar la anterior
+
   { path: "/MusicaContextual", element: <MusicaContextual /> },
-  { path: "/songs/:id", element: <CupidoMusical /> },
+  { path: "/CupidoMusical", element: <CupidoMusical /> },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
