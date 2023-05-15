@@ -11,7 +11,7 @@ function Footer() {
 
   //CAMBIAR LAS RUTAS CUANDO ESTEN LOS COMPONENTES!!!!!!
   const goHome = () => {
-    navigate("/contextMusic");
+    navigate("/home");
   };
 
   const goSearch = () => {
@@ -19,7 +19,7 @@ function Footer() {
   };
 
   const goProfile = () => {
-    navigate("/contextMusic");
+    navigate("/profile");
   };
 
   const goFriends = () => {

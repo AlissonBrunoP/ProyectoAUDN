@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import arrowLeft from "../../assets/icons/position=left-1.svg";
 import closedEye from "../../assets/icons/state=closed.svg";
 import openEye from "../../assets/icons/state=open.svg";
@@ -10,6 +10,7 @@ function MainLogin() {
   const [isPasswordVisible, setIsPasswordVisible] = useState(false);
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
 
   function togglePasswordVisibility() {
     setIsPasswordVisible((visible) => !visible);
@@ -24,21 +25,21 @@ function MainLogin() {
   }
 
   function handleLogin() {
-    // Realizar lógica de inicio de sesión aquí
+    navigate("/home");
   }
 
   const isFormValid = username.trim() !== "" && password.trim() !== "";
 
   return (
     <>
-      <header className="header">
+      <header className="headerLogin">
         <NavLink to="/">
           <img src={arrowLeft} alt="Left Arrow" />
         </NavLink>
-        <p className="iniciarsesion">Iniciar Sesión</p>
+        <h3 className="iniciarsesion">Iniciar Sesión</h3>
       </header>
 
-      <main>
+      <main className="mainLogin">
         <form
           className="form"
           action=""

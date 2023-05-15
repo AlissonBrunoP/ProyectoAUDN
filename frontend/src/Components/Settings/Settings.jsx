@@ -4,7 +4,7 @@ import "./Settings.css";
 
 function Settings() {
   const onClickReturn = () => {
-    navigate(`/`, { replace: true });
+    navigate(`/profile`, { replace: true });
   };
 
   return (

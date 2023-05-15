@@ -24,7 +24,7 @@ function MusicaContextual() {
   const navigate = useNavigate();
 
   const goBack = () => {
-    navigate("/");
+    navigate(-1);
   };
 
   const activity = async () => {
