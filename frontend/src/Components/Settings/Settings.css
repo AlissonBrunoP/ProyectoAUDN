@@ -1,0 +1,73 @@
+#settingsTop {
+  display: flex;
+  background: linear-gradient(
+      180deg,
+      rgba(255, 142, 10, 0.225) 0%,
+      rgba(255, 142, 10, 0.133647) 25%,
+      rgba(253, 254, 255, 0) 75%
+    ),
+    #ffffff;
+  margin: 0px;
+  padding: 35px;
+  backdrop-filter: blur(100px);
+}
+
+#settingsTop h3 {
+  margin-left: 80px;
+  width: 272px;
+  height: 24px;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+#btnEdit {
+  width: 320px;
+  padding: 15px;
+  background-color: #ff8e0a;
+  color: white;
+  border: none;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+#btnEditProfile {
+  width: 320px;
+  padding: 15px;
+  background-color: #26262e;
+  color: white;
+  border: none;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+#divButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  margin-top: 390px;
+}
+
+.horizontalLine {
+  border-top: 2px solid #e4e6e8;
+  width: 350px;
+  display: flex;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+#divButton button {
+  border: none;
+  background-color: white;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  width: 370px;
+  height: 80px;
+  color: #26262e;
+}
+
+#divButton p {
+  font-size: 16px;
+  color: #26262e;
+  margin-bottom: 10px;
+}
