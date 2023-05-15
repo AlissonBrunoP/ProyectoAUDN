@@ -1,0 +1,180 @@
+* {
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.card {
+    width: 350px;
+    height: auto;
+    margin: auto;
+    background: linear-gradient(0deg, rgba(253, 254, 255, 0) 25%, rgba(255, 142, 10, 0.133647) 75%, rgba(255, 142, 10, 0.225) 100%), #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    position: relative;
+}
+.cardShadow {
+    width: 350px;
+    height: auto;
+    margin: auto;
+    background: hsl(0, 0%, 35%, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;     
+}
+.header {
+    width: 300px;  
+    height: 80px;
+    margin-bottom: 50px;     
+    display: flex;
+    align-items: center;
+    gap: 25%;
+}/* ---------- Main image of current artist ----------------- */
+.boxImage {
+    width: 250px;
+    height: 270px; 
+    display: flex;
+    align-items: center;
+    object-fit: cover;   
+}
+.boxImage img {
+    width: 250px;
+    max-height: 270px;
+    border-radius: 0px 50px 0px 50px;
+    overflow: hidden;  
+}/* ----------- Hart and cross buttons ---------------------- */
+.selectButtons {
+    top: 370px;
+    width: 180px;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 1;    
+}
+.iconBox {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-color: transparent;
+    border-radius: 50%;    
+    box-shadow: 1px 1px #959797;
+}
+.iconBox img {   
+    scale: 1.4;
+}/* --------------------- Artist name ------------------------ */
+.artistName {
+    height: 50px;
+    margin-top: 50px;
+}/* --------------- Text and icon of matches ------------------ */
+.matches {
+    width: 330px;
+    height: 50px;
+    padding: 20px;
+    font-size: 25px; 
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 25px;
+}
+.matches img {
+    width: 60px;
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 1px 1px #959797;
+}/* ---------- Image list of selected arists ------------------ */
+.boxList {
+    max-width: 350px;
+    height: 65px;
+    margin: 15px 0px 0px 0px;
+    display: flex;    
+}
+.boxItem {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;  
+    overflow: hidden; 
+    margin-left: -20px; 
+}
+.boxItem img {   
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}/* ---------- Button Create Play List ---------------------- */
+.createPlayList{
+    width: 300px;
+    height: 60px;
+    border-radius: 0px 25px 0px 25px;
+    color: white; 
+    background-color: rgb(255, 102, 0);
+    border: none;
+    overflow: hidden;
+    display: block;   
+}
+.createBtn {
+    width: 300px;
+    height: 45px;
+    margin: 30px 0px 60px 0px;
+    border-radius: 0px 15px 0px 15px;
+    color: white; 
+    font-size: 20px; 
+    background-color: rgb(255, 102, 0);
+    border: none;      
+}
+.shadowCreateBtn {
+    width: 300px;
+    height: 45px;
+    margin: 30px 0px 60px 0px;
+    border-radius: 0px 15px 0px 15px;
+    color: white;
+    font-size: 20px; 
+    background-color: #8f8f8f;
+    border: none;    
+}/* -------------------- Popup dialog on start slection--------- */
+.popUp {
+    position: relative;
+}
+.dialog {    
+    top: -670px;
+    left: -155px;
+    background-color: white;  
+    width: 310px;
+    height: 750px; 
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    position: absolute;
+    z-index: 1;  
+}
+.dialogHeader {
+    width: 270px;
+    height: 300px;
+    padding: 30px;
+    margin-top: 20px;
+    background: linear-gradient(180deg, rgba(253, 254, 255, 0) 25%, rgba(255, 142, 10, 0.133647) 75%, rgba(255, 142, 10, 0.225) 100%), #FFFFFF;
+    text-align: center;
+}
+.dialogHeader img {
+    margin-top: 70px;
+}
+.dialog p {
+    width: 270px;  
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+}
+.dialog button {
+    width: 270px;
+    height: 50px;   
+    border-radius: 0px 20px 0px 20px;
+    color: white; 
+    background-color: black; 
+}
+
+   
+   
+
+   
