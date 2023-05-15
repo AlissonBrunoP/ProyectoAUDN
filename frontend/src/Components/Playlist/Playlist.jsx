@@ -109,7 +109,7 @@ function Playlist() {
                   />
                   <div className="songDetails">
                     <p className="songName">{song.song_name}</p>
-                    <p className="artistName">{song.artist_name}</p>
+                    <p className="artistNamePlaylist">{song.artist_name}</p>
                   </div>
                   <img src={options} alt="Options" className="songOptions" />
                 </div>

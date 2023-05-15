@@ -152,7 +152,7 @@ function Searcher() {
                   />
                   <div className="songDetails">
                     <p className="songName">{data.song_name}</p>
-                    <p className="artistName">{data.artist_name}</p>
+                    <p className="artistNameSearch">{data.artist_name}</p>
                   </div>
                   <img src={options} alt="Options" className="songOptions" />
                 </div>
@@ -174,7 +174,7 @@ function Searcher() {
                       />
                       <div className="songDetails">
                         <p className="songName">{item.name}</p>
-                        <p className="artistName">{item.artist}</p>
+                        <p className="artistNameSearch">{item.artist}</p>
                       </div>
                       <img
                         src={options}

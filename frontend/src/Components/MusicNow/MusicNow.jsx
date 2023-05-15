@@ -4,10 +4,23 @@ import campaign from "../../assets/icons/campana.svg";
 import "./MusicNow.css";
 import cupidoMusical from "../../assets/cupidoMusical.png";
 import musicaContextual from "../../assets/musicaContextual.png";
+import { useNavigate } from "react-router-dom";
+import Footer from "../Footer/Footer";
 
 function MusicNow() {
+  const navigate = useNavigate();
+
+  const goToContext = () => {
+    navigate("/contextMusic")
+  }
+
+  const goToCupid = () => {
+    navigate("/CupidoMusical")
+  }
+
   return (
     <>
+    <div id="musicNowContainer">
       <div id="musicNowTop">
         <h3>Música ya</h3>
         <button id="btnClock">
@@ -19,6 +32,7 @@ function MusicNow() {
       </div>
       <button
         id="btnCupidoMusical"
+        onClick={goToCupid}
         style={{
           borderTopRightRadius: "25px",
           borderBottomLeftRadius: "25px",
@@ -54,6 +68,7 @@ function MusicNow() {
       </button>
       <button
         id="btnMusicaContextual"
+        onClick={goToContext}
         style={{
           borderTopRightRadius: "25px",
           borderBottomLeftRadius: "25px",
@@ -85,6 +100,10 @@ function MusicNow() {
           </div>
         </div>
       </button>
+      <section id="footerContainerMN">
+        <Footer />
+      </section>
+      </div>
     </>
   );
 }

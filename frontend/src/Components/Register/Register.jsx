@@ -156,10 +156,10 @@ function Register() {
 
       {isHidden ? (
         <div id="hiddenMail">
-          <h1>¿Cuál es tu correo electrónico?</h1>
+          <h1 className="titleH1">¿Cuál es tu correo electrónico?</h1>
           <div id="inpMail" className="inputMail">
             <label htmlFor="emailRegister">
-              <h4>Correo electrónico:</h4>
+              <h4 className="titleH4">Correo electrónico:</h4>
             </label>
             <input
               type="email"
@@ -192,10 +192,10 @@ function Register() {
         </div>
       ) : (
         <div id="divHidden">
-          <h1>Ingresa un nombre de usuario y Contraseña.</h1>
+          <h1 className="titleH1">Ingresa un nombre de usuario y Contraseña.</h1>
           <div id="inpUser" className="inputMail">
             <label htmlFor="userRegister">
-              <h4>Nombre de Usuario:</h4>
+              <h4 className="titleH4">Nombre de Usuario:</h4>
             </label>
             <input
               type="text"
@@ -213,9 +213,9 @@ function Register() {
 
           <div id="inpPassword" className="inputMail">
             <label htmlFor="passwordRegister">
-              <h4>Contraseña:</h4>
+              <h4 className="titleH4">Contraseña:</h4>
             </label>
-            <form
+            <form className="formRegister"
               style={{
                 borderTopRightRadius: "17px",
                 borderBottomLeftRadius: "17px",
@@ -252,7 +252,7 @@ function Register() {
             <input type="checkbox" id="termsCheckbox" />
             <label htmlFor="termsCheckbox" id="labelCheckbox">
               He leído y acepto los <a href="">Términos</a> y{" "}
-              <a href="">Condiciones</a>
+              <a className="linkTag" href="">Condiciones</a>
             </label>
           </div>
         </div>

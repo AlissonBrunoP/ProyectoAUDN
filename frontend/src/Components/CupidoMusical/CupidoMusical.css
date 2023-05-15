@@ -13,6 +13,7 @@
     flex-direction: column;
     align-items: center; 
     position: relative;
+    width: 100vw;
 }
 .cardShadow {
     width: 350px;
