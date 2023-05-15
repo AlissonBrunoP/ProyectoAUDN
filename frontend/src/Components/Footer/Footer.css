@@ -1,0 +1,24 @@
+* {
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #26262e;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1em;
+    padding-bottom: 10px;
+    background: linear-gradient(180deg, rgba(253, 254, 255, 0) 25%, rgba(255, 142, 10, 0.133647) 75%, rgba(255, 142, 10, 0.225) 100%);;
+}
+
+.buttonFooter {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+}

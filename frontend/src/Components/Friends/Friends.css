@@ -1,0 +1,122 @@
+* {
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #26262e;
+}
+
+#myFriendsContainer {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+}
+
+.mySelfContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.myImageFriends {
+    border-radius: 50%;
+    width: 10rem;
+    margin-top: 5rem;
+}
+
+.myNameFriends {
+    margin-top: 12rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.myUserNameFriends {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.myFriendImage {
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+}
+
+.divisionFriends {
+    display: flex;
+    justify-content: center ;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+.addFriendsButton {
+    margin-right: 2rem;
+    width: 8rem;
+    cursor: pointer;
+    border: none;
+    background-color: #FF8E0A;
+    color: #FFFFFF;
+    border-radius: 0px 16px;
+}
+
+.myFriendsTitle {
+    margin-left: 2rem;
+}
+
+.showMyFriendsSection {
+    gap: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.myFriendName {
+    text-align: center;
+    font-weight: bolder;
+}
+
+#footerFriends {
+    position: fixed;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    height: 80px;
+}
+
+.headerFriendsSection {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: linear-gradient(
+        180deg,
+        rgba(255, 142, 10, 0.225) 0%,
+        rgba(255, 142, 10, 0.133647) 25%,
+        rgba(253, 254, 255, 0) 75%
+      ),
+      #ffffff;
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    backdrop-filter: blur(100px);
+    height: 80px;
+}
+
+.TitleOfFriendsSection {
+    text-align: center;
+    width: 272px;
+    height: 24px;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+.goBack {
+    background-color: transparent;
+    border: none;
+}

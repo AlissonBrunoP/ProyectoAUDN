@@ -4,11 +4,18 @@ import App from "./App.jsx";
 import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import MusicaContextual from "./Components/MusicaContextual/MusicaContextual.jsx";
+import Playlist from "./Components/Playlist/Playlist.jsx";
+import Searcher from "./Components/Searcher/Searcher.jsx";
+import Friends from "./Components/Friends/Friends.jsx";
+import Error from "./Components/ErrorPage/Error.jsx";
 
 const Router = createBrowserRouter([
   { path: "/", element: <App /> },
-  { path: "/MusicaContextual", element: <MusicaContextual /> },
-  { path: "/songs/:id", element: <CupidoMusical /> },
+  { path: "/contextMusic", element: <MusicaContextual /> },
+  { path: "/playlist", element: <Playlist /> },
+  { path: "/search", element: <Searcher /> },
+  { path: "/friends", element: <Friends /> },
+  { path: "*", element: <Error /> },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
