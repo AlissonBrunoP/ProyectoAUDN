@@ -1,0 +1,27 @@
+.containter{
+    display: flex;
+    flex-direction: column;
+    object-fit: contain;
+}
+
+/* .header{
+    display: flex;
+    justify-content: space-between;
+} */
+
+.input-field{
+    width: 300px;
+    height: 40px;
+    border: 2px solid whitesmoke;
+    border-radius: 0 15px;
+    text-indent: 10px;
+}
+.button{
+    width: 300px;
+
+}
+
+.rules{
+    color: gray;
+    
+}

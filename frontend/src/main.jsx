@@ -7,10 +7,7 @@ import MusicaContextual from "./Components/MusicaContextual/MusicaContextual.jsx
 import CupidoMusical from "./Components/CupidoMusical/CupidoMusical.jsx";
 
 const Router = createBrowserRouter([
-
-/*   { path: "/", element: <App /> }, */
-{ path: "/", element: <CupidoMusical /> }, //SACAR luego y descomentar la anterior
-
+  { path: "/", element: <App /> },
   { path: "/MusicaContextual", element: <MusicaContextual /> },
   { path: "/CupidoMusical", element: <CupidoMusical /> },
 ]);
