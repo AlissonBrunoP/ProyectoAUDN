@@ -1,15 +1,18 @@
+import "./App.css";
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import routes from "./routes";
+import Lobby from "./Components/Lobby/Lobby";
+import MainLogin from "./Components/Login/MainLogin";
+import RecuperarCuenta from "./Components/RecuperarCuenta/RecuperarCuenta";
 
 function App() {
   return (
     <div>
       <BrowserRouter>
         <Routes>
-          {routes.map((route) => (
-            <Route path={route.path} element={route.element} key={route.path} />
-          ))}
+          <Route path="/" element={<Lobby />} />
+          <Route path="/login" element={<MainLogin />} />
+          <Route path="/resetaccount" element={<RecuperarCuenta />} />
         </Routes>
       </BrowserRouter>
     </div>
