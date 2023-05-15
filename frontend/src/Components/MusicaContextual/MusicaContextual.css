@@ -3,33 +3,49 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: #26262e;
 }
 
-.navBarContextMusic {
-    background: linear-gradient(180deg, rgba(253, 254, 255, 0) 25%, rgba(255, 142, 10, 0.133647) 75%, rgba(255, 142, 10, 0.225) 100%), #FFFFFF;
+#navBarContextMusic {
+    background: linear-gradient(
+        180deg,
+        rgba(255, 142, 10, 0.225) 0%,
+        rgba(255, 142, 10, 0.133647) 25%,
+        rgba(253, 254, 255, 0) 75%
+      ),
+      #ffffff;
     display: flex;
     flex-direction: row;
+    padding: 35px;
+    backdrop-filter: blur(100px);
 }
 
+#navBarContextMusic h3 {
+    text-align: center;
+    width: 272px;
+    height: 24px;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+.goBack {
+    background-color: transparent;
+    border: none;
+}
 select {
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
     background-image: none;
+    outline: none;
 }
 
 .selectsContextMusic {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-select:focus{
-    border: 2.15px solid #FF8E0A;
-}
-
-select:not(:focus).upArrow{
-    border: 2.15px solid #26262E;
+    gap: 2em;
+    width: 24em;
 }
 
 .upArrow, .downArrow {
@@ -37,14 +53,71 @@ select:not(:focus).upArrow{
     background-position: right;
     background-size: 1.5em;
     border-radius: 0px 8.6px 0px 8.6px;
-    width: 250px;
-    height: 25.8px;
+    width: 24em;
+    height: 3em;
 }
 
 .upArrow {
     background-image: url(../../assets/icons/position=up.svg);
+    outline: 2.15px solid #FF8E0A;
 }
 
 .downArrow {
     background-image: url(../../assets/icons/position=down.svg);
+    border: 2.15px solid #26262E;
+}
+
+label {
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+}
+
+.genreButton, .genreButtonClicked {
+    border-radius: 0px 8.6px 0px 8.6px;
+    padding: 3px;
+    margin: 0.2em;
+}
+
+.genreButton {
+    background-color: transparent;
+}
+
+.genreButtonClicked {
+    background-color: #26262E;
+    color: #FDFEFF
+}
+
+.genre {
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.genre h4 {
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.buttonCreate, .buttonCreateDisabled {
+    width: 300px;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 0px 8.6px 0px 8.6px;
+    margin-top: 2em;
+}
+
+.buttonCreate { 
+    background-color: #ff8e0a;
+}
+
+.buttonCreateDisabled {
+    background-color: #E4E6E8;
 }

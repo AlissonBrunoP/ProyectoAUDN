@@ -1,9 +1,9 @@
 import React, { useState } from "react";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import arrowLeft from "../../assets/icons/position=left-1.svg";
 import "./Register.css";
 import close from "../../assets/icons/state=closed.svg";
 import open from "../../assets/icons/state=open.svg";
-import { Link, useNavigate, useParams } from "react-router-dom";
 
 function Register() {
   const navigate = useNavigate();
@@ -14,7 +14,6 @@ function Register() {
   const [isButtonEnabled, setIsButtonEnabled] = useState(false);
   const [isValidUsername, setIsValidUsername] = useState(false);
   const [username, setUsername] = useState("");
-  const [messageError, setMessageError] = useState([]);
   const [message, setMessage] = useState([]);
   const [isPasswordValid, setIsPasswordValid] = useState(null);
   const [inputBorderColor, setInputBorderColor] = useState("");
@@ -32,7 +31,7 @@ function Register() {
   const handleEmailChange = (event) => {
     setEmail(event.target.value);
     setIsButtonEnabled(
-      event.target.value.indexOf("@") != -1 &&
+      event.target.value.indexOf("@") !== -1 &&
         event.target.value.endsWith(".com")
     );
   };
@@ -49,10 +48,6 @@ function Register() {
       setIsPasswordValid(true);
       setInputBorderColor("#03a400");
     }
-  };
-
-  const handleFinishClick = () => {
-    navigate(`/`, { replace: true });
   };
 
   const handleUsernameChange = (event) => {
@@ -88,7 +83,7 @@ function Register() {
         requestOptions
       );
       const data = await response.json();
-      if (data.exists || username == "") {
+      if (data.exists || username === "") {
         setIsValidUsername(false);
         setMessage(
           <span style={{ color: "#ea0f0f" }}>
@@ -153,7 +148,7 @@ function Register() {
   return (
     <div>
       <div id="registerTop">
-        <button className="btnArrowBack" onClick={onClickReturn}>
+        <button type="button" className="btnArrowBack" onClick={onClickReturn}>
           <img src={arrowLeft} alt="" />
         </button>
         <h3>Crear Cuenta</h3>
@@ -161,10 +156,10 @@ function Register() {
 
       {isHidden ? (
         <div id="hiddenMail">
-          <h1>¿Cuál es tu correo electrónico?</h1>
+          <h1 className="titleH1">¿Cuál es tu correo electrónico?</h1>
           <div id="inpMail" className="inputMail">
             <label htmlFor="emailRegister">
-              <h4>Correo electrónico:</h4>
+              <h4 className="titleH4">Correo electrónico:</h4>
             </label>
             <input
               type="email"
@@ -179,6 +174,7 @@ function Register() {
             <p>Deberá poder confirmarlo luego.</p>
           </div>
           <button
+            type="button"
             id="btnConfirm"
             className="btnConfirmStyle"
             style={{
@@ -196,10 +192,10 @@ function Register() {
         </div>
       ) : (
         <div id="divHidden">
-          <h1>Ingresa un nombre de usuario y Contraseña.</h1>
+          <h1 className="titleH1">Ingresa un nombre de usuario y Contraseña.</h1>
           <div id="inpUser" className="inputMail">
             <label htmlFor="userRegister">
-              <h4>Nombre de Usuario:</h4>
+              <h4 className="titleH4">Nombre de Usuario:</h4>
             </label>
             <input
               type="text"
@@ -217,9 +213,9 @@ function Register() {
 
           <div id="inpPassword" className="inputMail">
             <label htmlFor="passwordRegister">
-              <h4>Contraseña:</h4>
+              <h4 className="titleH4">Contraseña:</h4>
             </label>
-            <form
+            <form className="formRegister"
               style={{
                 borderTopRightRadius: "17px",
                 borderBottomLeftRadius: "17px",
@@ -256,7 +252,7 @@ function Register() {
             <input type="checkbox" id="termsCheckbox" />
             <label htmlFor="termsCheckbox" id="labelCheckbox">
               He leído y acepto los <a href="">Términos</a> y{" "}
-              <a href="">Condiciones</a>
+              <a className="linkTag" href="">Condiciones</a>
             </label>
           </div>
         </div>

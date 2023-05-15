@@ -83,7 +83,7 @@ function CupidoMusical() {
   };
 
   const Back = () => {
-    navigate(`/`)
+    navigate(-1)
   };
 
   const next = () => {
