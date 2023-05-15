@@ -1,9 +1,9 @@
 import React, { useState } from "react";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import arrowLeft from "../../assets/icons/position=left-1.svg";
 import "./Register.css";
 import close from "../../assets/icons/state=closed.svg";
 import open from "../../assets/icons/state=open.svg";
-import { Link, useNavigate, useParams } from "react-router-dom";
 
 function Register() {
   const navigate = useNavigate();
@@ -14,7 +14,6 @@ function Register() {
   const [isButtonEnabled, setIsButtonEnabled] = useState(false);
   const [isValidUsername, setIsValidUsername] = useState(false);
   const [username, setUsername] = useState("");
-  const [messageError, setMessageError] = useState([]);
   const [message, setMessage] = useState([]);
   const [isPasswordValid, setIsPasswordValid] = useState(null);
   const [inputBorderColor, setInputBorderColor] = useState("");
@@ -32,7 +31,7 @@ function Register() {
   const handleEmailChange = (event) => {
     setEmail(event.target.value);
     setIsButtonEnabled(
-      event.target.value.indexOf("@") != -1 &&
+      event.target.value.indexOf("@") !== -1 &&
         event.target.value.endsWith(".com")
     );
   };
@@ -49,10 +48,6 @@ function Register() {
       setIsPasswordValid(true);
       setInputBorderColor("#03a400");
     }
-  };
-
-  const handleFinishClick = () => {
-    navigate(`/`, { replace: true });
   };
 
   const handleUsernameChange = (event) => {
@@ -88,7 +83,7 @@ function Register() {
         requestOptions
       );
       const data = await response.json();
-      if (data.exists || username == "") {
+      if (data.exists || username === "") {
         setIsValidUsername(false);
         setMessage(
           <span style={{ color: "#ea0f0f" }}>
@@ -153,7 +148,7 @@ function Register() {
   return (
     <div>
       <div id="registerTop">
-        <button className="btnArrowBack" onClick={onClickReturn}>
+        <button type="button" className="btnArrowBack" onClick={onClickReturn}>
           <img src={arrowLeft} alt="" />
         </button>
         <h3>Crear Cuenta</h3>
@@ -179,6 +174,7 @@ function Register() {
             <p>Deberá poder confirmarlo luego.</p>
           </div>
           <button
+            type="button"
             id="btnConfirm"
             className="btnConfirmStyle"
             style={{
