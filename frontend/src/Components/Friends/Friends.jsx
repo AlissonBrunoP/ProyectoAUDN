@@ -1,5 +1,5 @@
 import React from "react";
-import ali from "../../assets/friends/anne.jpg";
+import ali from "../../assets/friends/anneH.jpg";
 import seba from "../../assets/friends/arezo.jpg";
 import jose from "../../assets/friends/patch.jpg";
 import vir from "../../assets/friends/julia.jpg";
@@ -29,6 +29,7 @@ function Friends() {
       </section>
       <section className="divisionFriends">
         <h4 className="myFriendsTitle">Mis amigos</h4>
+        <div id="horizontalLineFriend"></div>
         <button className="addFriendsButton">Agregar Amigos</button>
       </section>
       <section className="showMyFriendsSection">
@@ -47,9 +48,9 @@ function Friends() {
           <p className="myFriendName">Vir</p>
         </div>
       </section>
-      <section>
+      <div id="footerFriends">
         <Footer />
-      </section>
+      </div>
     </div>
   );
 }

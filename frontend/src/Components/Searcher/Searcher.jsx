@@ -188,9 +188,9 @@ function Searcher() {
           </>
         )}
       </main>
-      <section id="footerSearcher">
+      <div id="footerSearcher">
         <Footer />
-      </section>
+      </div>
     </div>
   );
 }

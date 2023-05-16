@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
-
 import "./Profile.css";
 import settingImg from "../../assets/icons/settings.svg";
 import Footer from "../Footer/Footer";
@@ -45,9 +44,12 @@ function Profile() {
           <button>Crear Playlist</button>
         </div>
       </div>
+    
+    
+
       <ul className="ulPlaylist">
         {userData.playlists != null &&
-          userData.playlists.map((playlist, index) => (
+          userData.playlists.slice(0,4).map((playlist, index) => (
             <li className="eachLi" key={index}>
               <div className="imgArtistPlaylist">
                 <img src={playlist.artist_images[0]} />
@@ -59,9 +61,9 @@ function Profile() {
             </li>
           ))}
       </ul>
-      <section id="footerContainerProfile">
+      <div id="footerContainerProfile">
         <Footer/>
-      </section>
+      </div>
     </>
   );
 }

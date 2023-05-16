@@ -100,9 +100,9 @@ function MusicNow() {
           </div>
         </div>
       </button>
-      <section id="footerContainerMN">
+      <div id="footerContainerMN">
         <Footer />
-      </section>
+      </div>
       </div>
     </>
   );
