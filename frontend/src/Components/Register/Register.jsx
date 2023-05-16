@@ -121,7 +121,7 @@ function Register() {
 
     try {
       const response = await fetch(
-        "http://localhost:3000/api/check",
+        "http://localhost:3000/api/register",
         requestOptions
       );
       const data = await response.json();
@@ -132,11 +132,7 @@ function Register() {
           </span>
         );
       } else if (response.ok) {
-        setMessage(
-          <span style={{ color: "#03a400" }}>
-            El nombre de usuario está disponible
-          </span>
-        );
+        navigate(`/home`, { replace: true });
       }
     } catch (error) {
       alert("Ha ocurrido un error, intenta nuevamente.");
@@ -251,7 +247,7 @@ function Register() {
           <div className="termsContainer">
             <input type="checkbox" id="termsCheckbox" />
             <label htmlFor="termsCheckbox" id="labelCheckbox">
-              He leído y acepto los <a href="">Términos</a> y{" "}
+              He leído y acepto los <a href="" className="linkTag">Términos</a> y
               <a className="linkTag" href="">Condiciones</a>
             </label>
           </div>
