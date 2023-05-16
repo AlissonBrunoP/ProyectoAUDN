@@ -233,4 +233,25 @@ exports.songsSearch = async (req, res) => {
   }
 };
 
+exports.loginUser = async (req, res) => {
+  const { user_name, password } = req.body;
+  try {
+    const resultado = await knex("users").where({ user_name: user_name });
+    if (!resultado.length) {
+      res.status(404).json({ error: "El usuario no se encuentra registrado" });
+      return;
+    }
+    const validatePassword = await bcrypt.compare(password, resultado[0].password);
+    if (!validatePassword) {
+      res.status(400).json({ error: "Usuario y/o contraseña inválido" });
+      return;
+    }
+    const token = jwt.sign({ user_name: resultado[0].user_name }, process.env.TOKEN_SECRET);
+    res.status(200).json({ message: "El usuario se ha logeado correctamente", token: token });
+  } catch (error) {
+    res.status(400).json({ error: error.message });
+  }
+};
+
+
 

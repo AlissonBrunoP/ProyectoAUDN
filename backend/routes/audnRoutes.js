@@ -7,7 +7,8 @@ const {
   userMe,
   userRegister,
   GetArtist,
-  getAllSongsByArtist
+  getAllSongsByArtist,
+  loginUser
 
 } = require("../controllers/audnControllers");
 
@@ -27,6 +28,7 @@ routes.post("/songsByArtist", getAllSongsByArtist);
 routes.get("/me", userMe);
 routes.post("/register", userRegister);
 routes.post("/check", userCheck);
+routes.post("/login", loginUser);
 
 
 
