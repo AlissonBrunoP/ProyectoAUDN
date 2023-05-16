@@ -1,0 +1,40 @@
+* {
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #26262e;
+}
+
+#errorPage {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.notFound {
+    height: 25rem;
+}
+
+.notFoundTitle {
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+
+.notFoundParagraph {
+    text-align: center;
+    font-size: 15px;
+}
+.errorButton {
+    width: 200px;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 0px 8.6px 0px 8.6px;
+    background-color: #ff8e0a;
+    cursor: pointer;
+}

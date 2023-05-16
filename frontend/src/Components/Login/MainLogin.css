@@ -1,47 +1,68 @@
-.header{
-    height: 10vh;
+* {
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.headerLogin {
     display: flex;
-    flex-direction: row;
+    background: linear-gradient(
+        180deg,
+        rgba(255, 142, 10, 0.225) 0%,
+        rgba(255, 142, 10, 0.133647) 25%,
+        rgba(253, 254, 255, 0) 75%
+      ),
+      #ffffff;
+    margin: 0px;
+    padding: 35px;
+    backdrop-filter: blur(100px);
     align-items: center;
-    justify-content: flex-start;
-    gap: 25vw;
-   
-
 }
 
-.iniciarsesion{
-    
-    font-weight: 600;
+.iniciarsesionML {
+    text-align: center;
+    width: 272px;
+    height: 24px;
+    font-size: 16px;
+    letter-spacing: 0.5px;
 }
 
-body{
+.form {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    height: 100vh;
-    background: linear-gradient(360deg, rgb(253, 254, 255) 25%, rgba(248, 186, 115, 0.068) 75%, rgba(255, 185, 105, 0.651) 100%);
-    
+    justify-content: center;
+   
   }
-main{
+
+.mainLogin {
     display: flex;
-    height: 90vh;
+    height: 80vh;
     align-items:center ;
     justify-content: center;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;
+    flex-direction: column; 
     
 }
 
 
-.inputitile{
+.labelTitleML{
     font-weight: 600;
     text-align: left;
+    font-size: 16px;
+}
+
+.labelPassML {
+    margin-top: 8rem;
+    font-weight: 600;
+    text-align: left;
+    font-size: 16px;
 }
 
 
 
 .input-login{
-    margin-top: 10px;
-    margin-bottom: 50px;
+    margin-top: 1rem;
     width: 300px;
     height: 40px;
     border: 2px solid whitesmoke;
@@ -50,21 +71,19 @@ main{
 }
 
 .button{
-    font-weight: 600;
-    margin-top: 10px;
+    margin-top: 4rem;
     height: 40px;
-    width: 350px;
+    width: 300px;
     border: none;
     border-radius: 0px 15px;
-    color: orange;
-    
+    color: white;
+    background-color: orange; 
 }
 
 .inactivebutton{
-    font-weight: 600;
-    margin-top: 10px;
+    margin-top: 4rem;
     height: 40px;
-    width: 350px;
+    width: 300px;
     border: none;
     border-radius: 0px 15px;
     color: white;
@@ -72,7 +91,15 @@ main{
 }
 
 .olvido{
-    font-weight: 600;
-    margin-top: 20px;
+    margin-top: 3rem;
+    background-color: transparent;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+.error {
+    border-color: red;
 }
 

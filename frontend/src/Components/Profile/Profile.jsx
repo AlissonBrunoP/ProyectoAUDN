@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
-
 import "./Profile.css";
 import settingImg from "../../assets/icons/settings.svg";
+import Footer from "../Footer/Footer";
 
 function Profile() {
   const navigate = useNavigate();
@@ -44,10 +44,13 @@ function Profile() {
           <button>Crear Playlist</button>
         </div>
       </div>
-      <ul>
+    
+    
+
+      <ul className="ulPlaylist">
         {userData.playlists != null &&
-          userData.playlists.map((playlist, index) => (
-            <li key={index}>
+          userData.playlists.slice(0,4).map((playlist, index) => (
+            <li className="eachLi" key={index}>
               <div className="imgArtistPlaylist">
                 <img src={playlist.artist_images[0]} />
               </div>
@@ -58,6 +61,9 @@ function Profile() {
             </li>
           ))}
       </ul>
+      <div id="footerContainerProfile">
+        <Footer/>
+      </div>
     </>
   );
 }

@@ -121,7 +121,7 @@ function Register() {
 
     try {
       const response = await fetch(
-        "http://localhost:3000/api/check",
+        "http://localhost:3000/api/register",
         requestOptions
       );
       const data = await response.json();
@@ -132,11 +132,7 @@ function Register() {
           </span>
         );
       } else if (response.ok) {
-        setMessage(
-          <span style={{ color: "#03a400" }}>
-            El nombre de usuario está disponible
-          </span>
-        );
+        navigate(`/home`, { replace: true });
       }
     } catch (error) {
       alert("Ha ocurrido un error, intenta nuevamente.");
@@ -156,10 +152,10 @@ function Register() {
 
       {isHidden ? (
         <div id="hiddenMail">
-          <h1>¿Cuál es tu correo electrónico?</h1>
+          <h1 className="titleH1">¿Cuál es tu correo electrónico?</h1>
           <div id="inpMail" className="inputMail">
             <label htmlFor="emailRegister">
-              <h4>Correo electrónico:</h4>
+              <h4 className="titleH4">Correo electrónico:</h4>
             </label>
             <input
               type="email"
@@ -192,10 +188,10 @@ function Register() {
         </div>
       ) : (
         <div id="divHidden">
-          <h1>Ingresa un nombre de usuario y Contraseña.</h1>
+          <h1 className="titleH1">Ingresa un nombre de usuario y Contraseña.</h1>
           <div id="inpUser" className="inputMail">
             <label htmlFor="userRegister">
-              <h4>Nombre de Usuario:</h4>
+              <h4 className="titleH4">Nombre de Usuario:</h4>
             </label>
             <input
               type="text"
@@ -213,9 +209,9 @@ function Register() {
 
           <div id="inpPassword" className="inputMail">
             <label htmlFor="passwordRegister">
-              <h4>Contraseña:</h4>
+              <h4 className="titleH4">Contraseña:</h4>
             </label>
-            <form
+            <form className="formRegister"
               style={{
                 borderTopRightRadius: "17px",
                 borderBottomLeftRadius: "17px",
@@ -251,8 +247,8 @@ function Register() {
           <div className="termsContainer">
             <input type="checkbox" id="termsCheckbox" />
             <label htmlFor="termsCheckbox" id="labelCheckbox">
-              He leído y acepto los <a href="">Términos</a> y{" "}
-              <a href="">Condiciones</a>
+              He leído y acepto los <a href="" className="linkTag">Términos</a> y
+              <a className="linkTag" href="">Condiciones</a>
             </label>
           </div>
         </div>

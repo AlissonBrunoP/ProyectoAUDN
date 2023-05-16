@@ -1,12 +1,17 @@
 import React, { useState } from "react";
 import arrowLeft from "../../assets/icons/position=left-1.svg";
 import "./Settings.css";
+import { Link, useNavigate, useParams } from "react-router-dom";
+
 
 function Settings() {
+  const navigate = useNavigate();
+
   const onClickReturn = () => {
-    navigate(`/`, { replace: true });
+    navigate(`/profile`, { replace: true });
   };
 
+  
   return (
     <>
       <div id="settingsTop">

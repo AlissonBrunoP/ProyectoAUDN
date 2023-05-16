@@ -31,7 +31,11 @@
   position: absolute;
   right: 30px;
   top: 50px;
-}
+  }
+  #btnSettings img{
+   
+    margin-left: 12px;
+  }
 #infoUser {
   display: flex;
   flex-direction: column;
@@ -79,23 +83,23 @@
   color: white;
   margin-top: 10px;
 }
-ul {
+.ulPlaylist {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   margin-top: 30px;
 }
-ul li {
+.eachLi {
   display: flex;
   flex-direction: column;
 }
 
-ul li img {
+.imgArtistPlaylist img {
   width: 150px;
   border-radius: 0px 25px;
 }
 
-ul li p {
+.eachLi p {
   font-size: 12px;
   line-height: 18px;
   text-align: center;
@@ -103,10 +107,17 @@ ul li p {
   color: #26262e;
 }
 
-ul li span {
+.ulPlaylist li span {
   font-size: 12px;
   line-height: 18px;
   text-align: center;
   letter-spacing: 0.5px;
   color: #838486;
+}
+
+#footerContainerProfile {
+  position: fixed;
+  width: 390px; 
+ height: 80px;
+  top: 740px;
 }

@@ -1,26 +1,22 @@
-#root {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 0 2rem;
-    text-align: center;
-  }
-  
-  body{
+ 
+.lobby-container{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
     justify-content: center;
-    background: linear-gradient(360deg, rgba(253, 254, 255, 0.301) 25%, rgba(248, 186, 115, 0.535) 75%, rgba(255, 185, 105, 0.9) 100%);
-    
+    background: linear-gradient(180deg, rgba(253, 254, 255, 0) 0%, #FDFEFF 75%);    
+    background-size: contain;
+    height: 100vh;
+    width: 100vw;
   }
 
-  section{
+.sectionLobby {
     display: flex;
     flex-direction: column;
-    justify-content: end;
-    gap: 1vh;
-    height: 500px;
-   }
+    justify-content: flex-end;
+    height: 300px;
+    margin-top:110px;
+}
 
    .content{
     display: flex;
@@ -31,27 +27,29 @@
    .logo{
     display: flex;
     margin-left: 50px;
+    margin-top: 60px;
     width: 208px;
     height: 70px;
-    background-image: url(../../assets/icons/logo-large.jpg);
+    background-image: url(../../assets/icons/logo-large.svg);
     background-repeat: no-repeat;
    }
+
+   .logotipo {
+    background-color: transparent;
+    opacity: 50%;
+   }
    
-   
-      h3{
-          
+   .titleLobby {
       font-family: 'Rubik';
       font-style: normal;
       font-weight: 400;
       font-size: 26px;
       line-height: 31px;
       margin-top: 5%;
-      
-         
       text-align: center;
       letter-spacing: -0.8px;    
-         
-      color: #26262E;}
+      color: #26262E;
+    }
 
      
   
@@ -68,7 +66,9 @@
         margin: 10px;
         padding: 0px 15px;
         width: 300px;
-        font-weight: 600;
+        letter-spacing: 0.5px;
+        font-weight: 400;
+        padding: 20px;
                     
       }
   
@@ -80,12 +80,10 @@
         border-radius: 0px 20px;
         height: 39px;
         margin: 10px;
-        padding: 0px 15px;
         width: 300px;
         font-weight: 600;
-        
-  
-  
+        background-color: transparent;
+        padding: 20px;
     }
   
       .continuarconapple{
@@ -99,9 +97,8 @@
         padding: 0px 15px;
         width: 300px;
         font-weight: 600;
-        
-  
-  
+        background-color: transparent;
+        padding: 20px;
     }  
 
     .containerbutton{
@@ -115,7 +112,15 @@
         align-items: center;
         justify-content: center;       
         border: none;
-        padding: 0 -2rem;
+        padding: 30px;
+        width: 300px;
+        margin-top: 10px;
+        font-weight: 600;
+        background-color: white;
+        font-size: 16px;
+        color: black;
+        border-radius: 0px 20px;
+         height: 30px;
     }
 
    
@@ -128,6 +133,15 @@
       height: 100%;
       background-image: url("../../assets/icons/gif.gif"); 
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: 100% 100%;
+      background-color: black;
       z-index: -1;
+    }
+  
+#navLogin{
+  text-decoration: none;
+
+}
+    button img{
+      margin-right: 15px;
     }
