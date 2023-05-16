@@ -1,91 +1,102 @@
-#musicNowTop {
-  display: flex;
-  background: linear-gradient(
-      180deg,
-      rgba(255, 142, 10, 0.225) 0%,
-      rgba(255, 142, 10, 0.133647) 25%,
-      rgba(253, 254, 255, 0) 75%
-    ),
-    #ffffff;
+body {
   margin: 0px;
-  padding: 35px;
-  backdrop-filter: blur(100px);
-}
-
-#btnCampaign,
-#btnClock {
-  background-color: transparent;
-  outline: none;
-  border: none;
-}
-
-#btnClock {
-  margin-right: 20px;
-}
-
-#musicNowTop h3 {
-  width: 272px;
-  height: 24px;
-  font-size: 26px;
-  letter-spacing: 0.5px;
-}
-
-.componentsHome {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  text-align: start;
-  background-color: #fdfeff;
-}
-.componentsHome p {
-  font-size: 12px;
-  letter-spacing: 0.5px;
-  color: #45464b;
-}
-
-#btnMusicaContextual,
-#btnCupidoMusical {
-  width: 80%;
-  margin: 20px;
-  margin-left: 35px;
-  display: flex;
-  background-color: #fdfeff;
-  box-shadow: 3px 3px 5px #e4e6e8;
-  border-color: #e4e6e8;
-  border: 0px;
-}
-.componentText {
-  margin-left: 10px;
-  width: 180px;
-  margin-top: 5px;
-  background-color: #fdfeff;
-}
-
-.h4MusicNow {
-  font-size: 14px;
-  letter-spacing: 0.5px;
+  padding: 0px;
   color: #26262e;
-  margin: auto;
+}
+@media (min-width: 390px) and (max-width: 844px) {
+  #musicNowTop {
+    display: flex;
+    background: linear-gradient(
+        180deg,
+        rgba(255, 142, 10, 0.225) 0%,
+        rgba(255, 142, 10, 0.133647) 25%,
+        rgba(253, 254, 255, 0) 75%
+      ),
+      #ffffff;
+    margin: 0px;
+    padding: 35px;
+    backdrop-filter: blur(100px);
+  }
+  
+  #btnCampaign,
+  #btnClock {
+    background-color: transparent;
+    outline: none;
+    border: none;
+  }
+  
+  #btnClock {
+    margin-right: 20px;
+  }
+  
+  #musicNowTop h3 {
+    width: 272px;
+    height: 24px;
+    font-size: 26px;
+    letter-spacing: 0.5px;
+  }
+  
+  .componentsHome {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: start;
+    background-color: #fdfeff;
+  }
+  .componentsHome p {
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    color: #45464b;
+  }
+  
+  #btnMusicaContextual,
+  #btnCupidoMusical {
+    width: 80%;
+    margin: 20px;
+    margin-left: 35px;
+    display: flex;
+    background-color: #fdfeff;
+    box-shadow: 3px 3px 5px #e4e6e8;
+    border-color: #e4e6e8;
+    border: 0px;
+  }
+  .componentText {
+    margin-left: 10px;
+    width: 180px;
+    margin-top: 5px;
+    background-color: #fdfeff;
+  }
+  
+  .h4MusicNow {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    color: #26262e;
+    margin: auto;
+  }
+  
+  .componentsHome img {
+    width: 100px;
+  }
+  
+  .divImg {
+    background-color: #26262e;
+  }
+  
+  #footerContainerMN {
+      position: absolute;
+      justify-content: flex-end;
+      height: 80px;
+      width: 390px;
+      top: 740px;
+      
+  }
+  
+  #musicNowContainer {
+    height: 100vh;
+    width: 100vw;
+  }
+  
+
+
 }
 
-.componentsHome img {
-  width: 100px;
-}
-
-.divImg {
-  background-color: #26262e;
-}
-
-#footerContainerMN {
-    position: fixed;
-    bottom: 11rem;
-    left: 0;
-    right: 0;
-    height: 80px;
-    width: 390px;
-}
-
-#musicNowContainer {
-  height: 100vh;
-  width: 100vw;
-}
