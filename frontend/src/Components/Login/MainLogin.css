@@ -6,16 +6,21 @@
 }
 
 .headerLogin {
-    height: 20vh;
     display: flex;
-    flex-direction: row;
+    background: linear-gradient(
+        180deg,
+        rgba(255, 142, 10, 0.225) 0%,
+        rgba(255, 142, 10, 0.133647) 25%,
+        rgba(253, 254, 255, 0) 75%
+      ),
+      #ffffff;
+    margin: 0px;
+    padding: 35px;
+    backdrop-filter: blur(100px);
     align-items: center;
-    justify-content: flex-start;
-    gap: 25vw;
-    background: linear-gradient(360deg, rgb(253, 254, 255) 25%, rgba(248, 186, 115, 0.068) 75%, rgba(255, 185, 105, 0.651) 100%);
 }
 
-.headerLogin h3 {
+.iniciarsesionML {
     text-align: center;
     width: 272px;
     height: 24px;
@@ -27,7 +32,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 1rem;
    
   }
 
@@ -42,16 +46,23 @@
 }
 
 
-.inputitile{
+.labelTitleML{
     font-weight: 600;
     text-align: left;
+    font-size: 16px;
+}
+
+.labelPassML {
+    margin-top: 8rem;
+    font-weight: 600;
+    text-align: left;
+    font-size: 16px;
 }
 
 
 
 .input-login{
-    margin-top: 10px;
-    margin-bottom: 50px;
+    margin-top: 1rem;
     width: 300px;
     height: 40px;
     border: 2px solid whitesmoke;
@@ -60,20 +71,19 @@
 }
 
 .button{
-    margin-top: 10px;
+    margin-top: 4rem;
     height: 40px;
-    width: 350px;
+    width: 300px;
     border: none;
     border-radius: 0px 15px;
     color: white;
-    background-color: orange;
-    
+    background-color: orange; 
 }
 
 .inactivebutton{
-    margin-top: 10px;
+    margin-top: 4rem;
     height: 40px;
-    width: 350px;
+    width: 300px;
     border: none;
     border-radius: 0px 15px;
     color: white;
@@ -81,10 +91,15 @@
 }
 
 .olvido{
-    margin-top: 20px;
+    margin-top: 3rem;
     background-color: transparent;
     text-decoration: none;
     border: none;
     cursor: pointer;
+}
+
+
+.error {
+    border-color: red;
 }
 

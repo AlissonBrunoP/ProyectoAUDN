@@ -33,18 +33,34 @@
     gap: 25%;
 }/* ---------- Main image of current artist ----------------- */
 .boxImage {
-    width: 250px;
+    width: 270px; 
     height: 270px; 
+    border-radius: 0px 50px 0px 50px;
     display: flex;
+    justify-content: center;
     align-items: center;
-    object-fit: cover;   
+    overflow: hidden 
 }
 .boxImage img {
-    width: 250px;
-    max-height: 270px;
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+}
+.boxImage {
+    width: 270px; 
+    height: 270px; 
     border-radius: 0px 50px 0px 50px;
-    overflow: hidden;  
-}/* ----------- Hart and cross buttons ---------------------- */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden 
+}
+.boxImage img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+}
+/* ----------- Hart and cross buttons ---------------------- */
 .selectButtons {
     top: 370px;
     width: 180px;
